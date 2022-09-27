@@ -1,0 +1,36 @@
+<div class="row mt3">
+    <div class="col lg6">
+        <h1>Bienvenidos a La Biblioteca</h1>
+        <h3>Inicio de Sesión</h3>
+        <img [src]="img" alt="" width="550 px" height="400">
+
+    </div>
+</div> 
+
+<form [formGroup]="iniciarUser" (ngSubmit)="iniciarSesion()">
+
+    <div class="mb-3 row">
+        <label for="correo" class="col-sm-2 col-form-label">Usuario</label>
+        <div class="col-sm-4">
+            <input class="center-block" type="email" class="form-control" id="correo" placeholder="Ingrese su Correo">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="contraseña" class="col-sm-2 col-form-label">Contraseña</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña">
+        </div>
+    </div>
+
+    <!--Crear un eventos a los botones-->
+    <div class="col lg6">
+        <button type="button" class="btn btn-outline-success" routerLink="home">Ingresar</button>
+    </div>
+    <br>
+    <div class="col lg6">
+        <button type="button" class="btn btn-outline-warning" routerLink="add">Registrarse</button>
+    </div>
+
+</form>
+

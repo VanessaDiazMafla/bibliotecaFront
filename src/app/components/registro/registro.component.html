@@ -2,26 +2,85 @@
 <!---->
 <h3 class="mt-3">Registro</h3>
 
+
 <form [formGroup]="registrarUser" (ngSubmit)="registrar()">
-   
-    <div class="mb-3">
+
+    <div class="mb-3 row">
+        <label for="correo" class=" col-form-label">Id_Usuario</label>
+        <div class="col-sm-4">
+            <input formControlName="id" class="center-block" type="id" class="form-control" id="id" placeholder="Ingrese su Id">
+        </div>
+        
+        <span *ngIf="registrarUser.get('id')?.invalid && registrarUser.get('id')?.touched" class="text-danger">
+            El <strong>Id</strong> es un campo requerido
+        </span>
+    </div>
+<!--
+        <div class="mb-3">
+        <label for="nombre" class="form-label">Id_Usuario</label>
+        <div class="col-sm-10">
+            <input formControlName="id" type="text" class="form-control" id="id">
+        </div>
+    </div>
+    
+    -->
+    
+
+    <div class="mb-3 row">
+        <label for="correo" class=" col-form-label">Nombre</label>
+        <div class="col-sm-4">
+            <input formControlName="nombre" class="center-block" type="nombre" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
+        </div>
+       
+        <span *ngIf="registrarUser.get('nombre')?.invalid && registrarUser.get('nombre')?.touched" class="text-danger">
+            El <strong>Nombre</strong> es un campo requerido
+        </span>
+ <!--
+        <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <div class="col-sm-10">
             <input formControlName="nombre" type="text" class="form-control" id="nombre">
         </div>
     </div>
 
-    <div class="mb-3">
-        <label for="correo" class="form-label">Correo</label>
-        <input formControlName="correo" type="text" class="form-control" id="correo">
+    </div>-->
     </div>
 
-    <div class="mb-3">
-        <label for="contraseña" class="form-label">Contraseña</label>
-        <input formControlName="contraseña" class="form-control" id="contraseña">
+    <div class="mb-3 row">
+        <label for="correo" class=" col-form-label">Correo</label>
+        <div class="col-sm-4">
+            <input formControlName="correo" class="center-block" type="correo" class="form-control" id="correo" placeholder="Ingrese su Correo">
+        </div>
+        <span *ngIf="registrarUser.get('correo')?.invalid && registrarUser.get('correo')?.touched" class="text-danger">
+            El <strong>Correo</strong> es un campo requerido
+        </span>
+    </div>
+    
+    <div class="mb-3 row">
+        <label for="contraseña" class="col-form-label">Contraseña</label>
+        <div class="col-sm-4">
+            <input formControlName="contraseña" input type="password" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña">
+        </div>
+        <span *ngIf="registrarUser.get('contraseña')?.invalid && registrarUser.get('contraseña')?.touched" class="text-danger">
+            La <strong>Contraseña</strong> es un campo requerido
+        </span>
+        
     </div>
 
-    <button type="submit" class="btn btn-primary float-end" routerLink="/">Registrar</button>
+    <button type="submit" class="btn btn-outline-warning">Registrar</button>
+    <br>
+    <br>
+    <button type="button" class="btn btn-outline-success" routerLink="/" >Regresar</button>
+
+    
+
+<!--
+        <button type="submit" class="btn btn-primary" routerLink="/">Registrar</button>
+   <button type="button" class="btn btn-outline-primary">Primary</button>
+
+
     <button type="button" routerLink="/" class="btn btn-secondary">Regresar</button>
+
+-->
 </form>
 

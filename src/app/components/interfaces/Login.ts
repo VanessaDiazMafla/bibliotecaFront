@@ -2,7 +2,16 @@
 
 export interface Login{
 
+    id?:number;
     nombre?:string;
     correo:string;
-    contraseña:string;
+    contrasenia:string;
 }
+/*
+export interface Login1{
+
+    id:number;
+    nombre:string;
+    correo:string;
+    contraseña:string;
+}*/

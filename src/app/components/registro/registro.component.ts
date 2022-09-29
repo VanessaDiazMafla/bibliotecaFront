@@ -15,9 +15,10 @@ export class RegistroComponent implements OnInit {
 
     this.registrarUser = this.fb.group({
 
+      id:['', Validators.required],
       nombre: ['', Validators.required],
       correo: ['', Validators.required],
-      contraseña: ['', Validators.required]
+      contrasenia: ['', Validators.required,Validators.minLength(3)]
 
     })
    }
@@ -28,9 +29,10 @@ export class RegistroComponent implements OnInit {
 
     const login: Login = {
 
+      id:this.registrarUser.get('id')?.value,
       nombre: this.registrarUser.get('nombre')?.value,
       correo: this.registrarUser.get('correo')?.value,
-      contraseña: this.registrarUser.get('contraseña')?.value
+      contrasenia: this.registrarUser.get('contrasenia')?.value
     }
 
     console.log(login);

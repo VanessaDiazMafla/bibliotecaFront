@@ -11,21 +11,32 @@
 
     <div class="mb-3 row">
         <label for="correo" class="col-sm-2 col-form-label">Usuario</label>
+        
         <div class="col-sm-4">
-            <input class="center-block" type="email" class="form-control" id="correo" placeholder="Ingrese su Correo">
+            <input formControlName="correo" class="center-block" type="email" class="form-control" id="correo" placeholder="Ingrese su Correo">
+
+            <span *ngIf="iniciarUser.get('correo')?.invalid && iniciarUser.get('correo')?.touched" class="text-danger"> El <strong>correo</strong> es un campo requerido 
+            </span>
         </div>
+    
+        
+        
     </div>
 
-    <div class="mb-3 row">
+    <div class="mt-3 row">
         <label for="contraseña" class="col-sm-2 col-form-label">Contraseña</label>
         <div class="col-sm-4">
-            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña">
+            <input formControlName="contraseña"
+            type="password" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña">
+
+            <span *ngIf="iniciarUser.get('contraseña')?.invalid && iniciarUser.get('contraseña')?.touched" class="text-danger"> La <strong>contraseña</strong> es un campo requerido 
+            </span>
         </div>
     </div>
 
     <!--Crear un eventos a los botones-->
     <div class="col lg6">
-        <button type="button" class="btn btn-outline-success" routerLink="home">Ingresar</button>
+        <button type="submit" [disabled]="iniciarUser.invalid"  type="button" class="btn btn-outline-success" routerLink="home">Ingresar</button>
     </div>
     <br>
     <div class="col lg6">

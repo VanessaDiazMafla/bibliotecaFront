@@ -1,0 +1,48 @@
+<!-- <app-navbar></app-navbar>
+<h1 class="mt-3"> Registro de Libro </h1>
+<form [formGroup]="editarLibro" (ngSubmit)="editarlibro()">
+    <div>
+        <label for="isbn" class="form-label">ISBN</label>
+        
+        <input formControlName="isbn" type="text" class="form-control" id="isbn" autocomplete="off">
+
+        <span *ngIf="editarlibro.get('isbn')?.invalid && editarlibro.get('isbn')?.touched" class="text-danger"> El <strong>ISBN</strong> es un campo requerido 
+        </span>
+    </div>
+    <div>
+        <label for="titulo" class="form-label">Titulo</label>
+        
+        <input formControlName="titulo" type="text" class="form-control" id="titulo" autocomplete="off">
+
+        <span *ngIf="editarlibro.get('titulo')?.invalid && editarlibro.get('titulo')?.touched" class="text-danger"> El <strong>titulo</strong> es un campo requerido 
+        </span>
+
+    </div>
+
+    <div>
+        <label for="autor" class="form-label">Autor</label>
+        <input formControlName="autor" type="text" class="form-control" id="autor">
+
+        <span *ngIf="editarlibro.get('autor')?.invalid && editarlibro.get('autor')?.touched" class="text-danger"> El <strong>Autor</strong> es un campo requerido 
+
+        </span>
+    </div>
+
+    <div>
+        <label for="editorial" class="form-label">Editorial</label>
+        <input formControlName="editorial" class="form-control" id="editorial">
+
+        <span *ngIf="editarlibro.get('editorial')?.invalid && editarlibro.get('editorial')?.touched" class="text-danger"> El <strong>Editorial</strong> es un campo requerido 
+
+        </span>
+    </div>
+    <div class="mt-3">
+        <button type="submit" [disabled]="editarlibro.invalid" class="btn btn-primary float-end">Editar Libro</button>
+        
+        <button type="button" routerLink="/home" class="btn btn-secondary">Regresar</button>
+    </div>
+    
+
+
+
+</form> -->

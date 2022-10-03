@@ -27,15 +27,15 @@ export class EditarLibroComponent implements OnInit {
   }
 
   editarlibro(){
+
     console.log(this.editarLibro);
 
     const listar_libros:listar_libros={
       isbn:this.editarLibro.get('isbn')?.value,
       titulo: this.editarLibro.get('titulo')?.value,
       autor: this.editarLibro.get('autor')?.value,
-      editorial: this.editarLibro.get('editorial')?.value,
-      AnoPublicacion: new Date()
-      
+      editorial: this.editarLibro.get('editorial')?.value
+          
     }
     console.log(listar_libros);
   }

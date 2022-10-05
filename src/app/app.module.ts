@@ -12,6 +12,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListarLibrosComponent } from './components/listar-libros/listar-libros.component';
 import { AgregarLibroComponent } from './components/agregar-libro/agregar-libro.component';
 import { EditarLibroComponent } from './components/editar-libro/editar-libro.component';
+import { PrestamoLibroComponent } from './components/prestamo-libro/prestamo-libro.component';
+import { ListarPrestamoComponent } from './components/listar-prestamo/listar-prestamo.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EditarLibroComponent } from './components/editar-libro/editar-libro.com
     NavbarComponent,
     ListarLibrosComponent,
     AgregarLibroComponent,
-    EditarLibroComponent
+    EditarLibroComponent,
+    PrestamoLibroComponent,
+    ListarPrestamoComponent,
+
   ],
   imports: [
     BrowserModule,

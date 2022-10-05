@@ -4,7 +4,9 @@ import { AgregarLibroComponent } from './components/agregar-libro/agregar-libro.
 import { EditarLibroComponent } from './components/editar-libro/editar-libro.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListarLibrosComponent } from './components/listar-libros/listar-libros.component';
+import { ListarPrestamoComponent } from './components/listar-prestamo/listar-prestamo.component';
 import { LoginComponent } from './components/login/login.component';
+import { PrestamoLibroComponent } from './components/prestamo-libro/prestamo-libro.component';
 import { RegistroComponent } from './components/registro/registro.component';
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path:'agregarLibro', component:AgregarLibroComponent},
   {path:'listarLibro', component:ListarLibrosComponent},
   {path:'EditarLibro', component:EditarLibroComponent},
+  {path:'prestamoLibro', component:PrestamoLibroComponent},
+  {path:'listarprestamo', component:ListarPrestamoComponent},
   //{path:'/', component:RegistroComponent},
 
   {path:'**', redirectTo:'', pathMatch:'full'}

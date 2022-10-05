@@ -20,12 +20,7 @@ export class LoginComponent implements OnInit {
     this.iniciarUser = this.fb.group({
 
       correo: ['', Validators.required],
-/* <<<<<<< HEAD
-      contraseña: ['', Validators.required,]
-=======
       contrasenia: ['', Validators.required]
->>>>>>> 9c89f0d91e36177cda5393eaf21ec96735cc15b1 */
-
     })
 
   }

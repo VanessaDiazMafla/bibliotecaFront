@@ -17,16 +17,9 @@ export class AgregarLibroComponent implements OnInit {
     isbn:['',Validators.required],
     titulo:['',Validators.required],
     autor:['',Validators.required],
-    editorial:['',Validators.required],
-  
-
-
-  }    
-
-  )
+    editorial:['',Validators.required]
+  })
 }
-
-  
 
   ngOnInit(): void {
   }

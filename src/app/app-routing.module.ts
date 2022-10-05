@@ -7,6 +7,7 @@ import { ListarLibrosComponent } from './components/listar-libros/listar-libros.
 import { ListarPrestamoComponent } from './components/listar-prestamo/listar-prestamo.component';
 import { LoginComponent } from './components/login/login.component';
 import { PrestamoLibroComponent } from './components/prestamo-libro/prestamo-libro.component';
+
 import { RegistroComponent } from './components/registro/registro.component';
 
 const routes: Routes = [
@@ -20,6 +21,9 @@ const routes: Routes = [
   {path:'EditarLibro', component:EditarLibroComponent},
   {path:'prestamoLibro', component:PrestamoLibroComponent},
   {path:'listarprestamo', component:ListarPrestamoComponent},
+
+  //{path:'prestamos', component:PrestamosComponent},
+  //{path: 'agregarPrestamo', component: AgregarPrestamoComponent},
   //{path:'/', component:RegistroComponent},
 
   {path:'**', redirectTo:'', pathMatch:'full'}

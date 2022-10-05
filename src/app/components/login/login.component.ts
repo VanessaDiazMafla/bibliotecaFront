@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
 
       correo: ['', Validators.required],
 
+      contrasenia: ['', Validators.required]
 
     })
 

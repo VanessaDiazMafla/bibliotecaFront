@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Prestamo } from '../interfaces/Prestamo';
+import { prestamo } from '../interfaces/prestamo';
 
 @Component({
   selector: 'app-prestamos',
@@ -10,21 +10,21 @@ export class PrestamosComponent implements OnInit {
 
   img = 'https://cdn-icons-png.flaticon.com/512/5579/5579178.png'
 
-  prestamoLibros: Prestamo []=[
+  prestamoLibros: prestamo []=[
 
     {
-      id_usuario: 123,
+      id: '123',
       isbn: 'a123',
-      fechaPrestamo: new Date(), 
-      fechaDevolucion: new Date(), 
-      disponibilidad: ''
+      fecha_prestamo: new Date(), 
+      fecha_devolucion: new Date(), 
+      
     },
     {
-      id_usuario: 1234,
+      id: '1234',
       isbn: 'a1234',
-      fechaPrestamo: new Date(), 
-      fechaDevolucion: new Date(), 
-      disponibilidad: ''
+      fecha_prestamo: new Date(), 
+      fecha_devolucion: new Date(), 
+      
     }
     
     

@@ -12,13 +12,16 @@ export class AgregarLibroComponent implements OnInit {
   agregarLibro: FormGroup;
 
   constructor(private fb: FormBuilder) {
-     
+
   this.agregarLibro = this.fb.group({
     isbn:['',Validators.required],
     titulo:['',Validators.required],
     autor:['',Validators.required],
-    editorial:['',Validators.required]
+    editorial:['',Validators.required],
+
+  
   })
+
 }
 
   ngOnInit(): void {

@@ -12,8 +12,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListarLibrosComponent } from './components/listar-libros/listar-libros.component';
 import { AgregarLibroComponent } from './components/agregar-libro/agregar-libro.component';
 import { EditarLibroComponent } from './components/editar-libro/editar-libro.component';
-import { PrestamosComponent } from './components/prestamos/prestamos.component';
-import { AgregarPrestamoComponent } from './components/agregar-prestamo/agregar-prestamo.component';
+
+import { PrestamoLibroComponent } from './components/prestamo-libro/prestamo-libro.component';
+import { ListarPrestamoComponent } from './components/listar-prestamo/listar-prestamo.component';
+
 
 @NgModule({
   declarations: [
@@ -25,8 +27,8 @@ import { AgregarPrestamoComponent } from './components/agregar-prestamo/agregar-
     ListarLibrosComponent,
     AgregarLibroComponent,
     EditarLibroComponent,
-    PrestamosComponent,
-    AgregarPrestamoComponent
+    PrestamoLibroComponent,
+    ListarPrestamoComponent
   ],
   imports: [
     BrowserModule,

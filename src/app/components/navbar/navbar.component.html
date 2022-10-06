@@ -1,8 +1,10 @@
 
-  <nav class="navbar navbar-expand-lg" style="background-color: rgb(125, 218, 221);" >
-    <div class="container-fluid">
-      <img [src]="img" width="30"  heigth="30">
-      <a class="navbar-brand" routerLink="/home">Home</a>
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(22, 96, 99);" >
+     <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home">
+       <img [src]="img" width="30"  heigth="30">
+      Inicio
+       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>     
@@ -13,17 +15,10 @@
               <a class="nav-link" aria-current="page" routerLink="/listarLibro">Libros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/prestamos">Préstamo</a>
+
+              <a class="nav-link" aria-current="page" routerLink="/listarprestamo">Prestamo</a>
             </li>
           </ul>
-            <!--
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page">Reservas</a>
-            </li>
-          
-           <a class="nav-link" > libros</a>
-          <a class="nav-link" href="#">Prestamo</a>
-          <a class="nav-link disabled">Reserva</a> -->
         </div>
       </div>
     </div>

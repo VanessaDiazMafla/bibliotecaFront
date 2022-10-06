@@ -18,7 +18,8 @@ export class RegistroComponent implements OnInit {
       id:['', Validators.required],
       nombre: ['', Validators.required],
       correo: ['', Validators.required],
-      contrasenia: ['', Validators.required,Validators.minLength(3)]
+      contrasenia: ['', Validators.required]
+      //Validators.minLength(3)]
 
     })
    }

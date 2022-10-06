@@ -5,7 +5,7 @@
 <form [formGroup]="registrarUser" (ngSubmit)="registrar()">
 
     <div class="mb-3 row">
-        <label for="correo" class=" col-form-label">Id_Usuario</label>
+        <label for="id" class=" col-form-label">Identificación Usuario</label>
         <div class="col-sm-4">
             <input formControlName="id" class="center-block" type="id" class="form-control" id="id" placeholder="Ingrese su Id">
         </div>
@@ -14,19 +14,9 @@
             El <strong>Id</strong> es un campo requerido
         </span>
     </div>
-<!--
-        <div class="mb-3">
-        <label for="nombre" class="form-label">Id_Usuario</label>
-        <div class="col-sm-10">
-            <input formControlName="id" type="text" class="form-control" id="id">
-        </div>
-    </div>
-    
-    -->
-    
-
+   
     <div class="mb-3 row">
-        <label for="correo" class=" col-form-label">Nombre</label>
+        <label for="nombre" class=" col-form-label">Nombre Completo</label>
         <div class="col-sm-4">
             <input formControlName="nombre" class="center-block" type="nombre" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
         </div>
@@ -34,33 +24,24 @@
         <span *ngIf="registrarUser.get('nombre')?.invalid && registrarUser.get('nombre')?.touched" class="text-danger">
             El <strong>Nombre</strong> es un campo requerido
         </span>
- <!--
-        <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <div class="col-sm-10">
-            <input formControlName="nombre" type="text" class="form-control" id="nombre">
-        </div>
-    </div>
-
-    </div>-->
     </div>
 
     <div class="mb-3 row">
-        <label for="correo" class=" col-form-label">Correo</label>
+        <label for="correo" class=" col-form-label">Correo Electrónico</label>
         <div class="col-sm-4">
-            <input formControlName="correo" class="center-block" type="correo" class="form-control" id="correo" placeholder="Ingrese su Correo">
+            <input formControlName="correo" class="center-block" type="correo" class="form-control" id="correo" placeholder="E-mail">
         </div>
         <span *ngIf="registrarUser.get('correo')?.invalid && registrarUser.get('correo')?.touched" class="text-danger">
-            El <strong>Correo</strong> es un campo requerido
+            El <strong>Correo Electrónico</strong> es un campo requerido
         </span>
     </div>
     
     <div class="mb-3 row">
-        <label for="contraseña" class="col-form-label">Contraseña</label>
+        <label for="contrasenia" class="col-form-label">Contraseña</label>
         <div class="col-sm-4">
-            <input formControlName="contraseña" input type="password" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña">
+            <input formControlName="contrasenia" input type="password" class="form-control" id="contraseña" placeholder="Ingrese su Contraseña">
         </div>
-        <span *ngIf="registrarUser.get('contraseña')?.invalid && registrarUser.get('contraseña')?.touched" class="text-danger">
+        <span *ngIf="registrarUser.get('contrasenia')?.invalid && registrarUser.get('contrasenia')?.touched" class="text-danger">
             La <strong>Contraseña</strong> es un campo requerido
         </span>
         

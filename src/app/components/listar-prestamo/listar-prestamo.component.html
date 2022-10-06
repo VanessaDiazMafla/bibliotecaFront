@@ -10,7 +10,7 @@
                 <button class="btn btn-primary float-end" type="button" routerLink="/prestamoLibro">Nuevo Prestamo</button>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar identificación" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" routerLink="/search">Buscar</button>
+                    <button class="btn btn-outline-success" type="submit" routerLink="/search"><i class="bi bi-search"></i></button>
                 </form>
             </div> 
     </div>
@@ -32,10 +32,10 @@
                     <td>{{listprestamo.fecha_prestamo| date: 'dd/mm/yyyy' }}</td>
                     <td>{{listprestamo.fecha_devolucion| date: 'dd/mm/yyyy' }}</td>
                     <td style="width: 5%">
-                        <button class="btn btn-primary btn-sm float-end" routerLink="/prestamoLibro">prestar</button>
+                        <button class="btn btn-primary btn-sm float-end" routerLink="/prestamoLibro">Prestar<i class="bi bi-check-circle-fill"></i></button>
                     </td>
                     <td style="width: 5%">
-                        <button class="btn btn-danger btn-sm float-end">Rechazar</button>
+                        <button class="btn btn-danger btn-sm float-end">Rechazar<i class="bi bi-x-circle-fill"></i></button>
                     </td>
                 </tr> 
             </tbody>

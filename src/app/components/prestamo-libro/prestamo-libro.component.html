@@ -12,7 +12,7 @@
 
     </div>
        <div>
-        <label for="isbn" class="form-label">isbn</label>
+        <label for="isbn" class="form-label">ISBN Libro</label>
         <input formControlName="isbn" type="text" class="form-control" id="isbn">
 
         <span *ngIf="prestamoLibro.get('isbn')?.invalid && prestamoLibro.get('isbn')?.touched" class="text-danger"> El <strong>ISBN</strong> es un campo requerido 

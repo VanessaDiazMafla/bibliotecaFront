@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { prestamo_libros } from '../interfaces/prestamo';
+import { prestamo } from '../interfaces/prestamo';
 
 @Component({
   selector: 'app-listar-prestamo',
@@ -8,7 +8,7 @@ import { prestamo_libros } from '../interfaces/prestamo';
 })
 export class ListarPrestamoComponent implements OnInit {
 
-  listprestamo:prestamo_libros[] = [
+  listprestamo:prestamo[] = [
     { 
     id:'abc112',
     isbn:'NicolA Colle',

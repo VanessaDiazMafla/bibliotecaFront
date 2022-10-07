@@ -14,7 +14,7 @@ export class ListarLibrosComponent implements OnInit {
     titulo:'Ciberseguridad',
     autor:'NicolA Colle',
     editorial:'Digital planet',
-    AnoPublicacion:new Date()
+    AnioPublicacion: new Date()
   }
   
   ]

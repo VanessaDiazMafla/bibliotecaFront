@@ -15,6 +15,7 @@ import { EditarLibroComponent } from './components/editar-libro/editar-libro.com
 
 import { PrestamoLibroComponent } from './components/prestamo-libro/prestamo-libro.component';
 import { ListarPrestamoComponent } from './components/listar-prestamo/listar-prestamo.component';
+import { EditarPrestamoComponent } from './components/editar-prestamo/editar-prestamo.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ListarPrestamoComponent } from './components/listar-prestamo/listar-pre
     AgregarLibroComponent,
     EditarLibroComponent,
     PrestamoLibroComponent,
-    ListarPrestamoComponent
+    ListarPrestamoComponent,
+    EditarPrestamoComponent
   ],
   imports: [
     BrowserModule,

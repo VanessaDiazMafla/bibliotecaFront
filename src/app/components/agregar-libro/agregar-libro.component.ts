@@ -24,22 +24,22 @@ export class AgregarLibroComponent implements OnInit {
 
 }
 
+
   ngOnInit(): void {
   }
 
   
   agregarlibro(){
     console.log(this.agregarLibro);
-
     const listar_libros:listar_libros={
       isbn:this.agregarLibro.get('isbn')?.value,
       titulo: this.agregarLibro.get('titulo')?.value,
       autor: this.agregarLibro.get('autor')?.value,
       editorial: this.agregarLibro.get('editorial')?.value,
-      AnoPublicacion: new Date()
+      AnioPublicacion: new Date()
       
     }
     console.log(listar_libros);
   }
-
+  
 }

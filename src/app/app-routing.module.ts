@@ -15,8 +15,9 @@ const routes: Routes = [
 
   {path:'', component:LoginComponent},
   
-  {path:'add', component:RegistroComponent},
+  {path:'registroUser', component:RegistroComponent},
   {path:'home', component:HomeComponent},
+  {path:'login', component:LoginComponent},
   {path:'agregarLibro', component:AgregarLibroComponent},
   {path:'listarLibro', component:ListarLibrosComponent},
   {path:'EditarLibro', component:EditarLibroComponent},

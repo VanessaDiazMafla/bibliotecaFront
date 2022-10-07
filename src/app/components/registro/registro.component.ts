@@ -9,6 +9,9 @@ import { Login } from '../interfaces/Login';
 })
 export class RegistroComponent implements OnInit {
 
+  img='https://img.freepik.com/vector-premium/libro-abierto-letras-magicas_713151-40.jpg?w=826'
+
+
   registrarUser: FormGroup;
 
   constructor(private fb: FormBuilder) {

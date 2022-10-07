@@ -18,6 +18,7 @@ export class EditarLibroComponent implements OnInit {
       autor:['',Validators.required],
       editorial:['',Validators.required],
       
+      
     }    
   
     )
@@ -34,7 +35,8 @@ export class EditarLibroComponent implements OnInit {
       isbn:this.editarLibro.get('isbn')?.value,
       titulo: this.editarLibro.get('titulo')?.value,
       autor: this.editarLibro.get('autor')?.value,
-      editorial: this.editarLibro.get('editorial')?.value
+      editorial: this.editarLibro.get('editorial')?.value,
+      AnioPublicacion: new Date()
           
     }
     console.log(listar_libros);

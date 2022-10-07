@@ -3,6 +3,6 @@ export interface listar_libros{
     titulo:string;
     autor:string;
     editorial:string;
-    AnoPublicacion?:Date;
+    AnioPublicacion?:Date;
     
 }

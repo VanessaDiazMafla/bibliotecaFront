@@ -1,4 +1,4 @@
-export interface prestamo_libros{
+export interface prestamo{
     id: string;
     isbn:string;
     fecha_prestamo:Date;

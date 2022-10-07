@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { prestamo_libros } from '../interfaces/prestamo';
+import { prestamo } from '../interfaces/prestamo';
 
 @Component({
   selector: 'app-prestamo-libro',
@@ -17,30 +17,23 @@ export class PrestamoLibroComponent implements OnInit {
     id:['',Validators.required],
     isbn:['',Validators.required],
     fecha_prestamo:['',Validators.required],
-    fecha_devolucion:['',Validators.required],
-
-  }    
-
-  )
+    fecha_devolucion:['',Validators.required]
+  })
 }
-
-  
-
   ngOnInit(): void {
   }
 
-  
   prestamolibro(){
     console.log(this.prestamoLibro);
 
-    const prestamo_libros:prestamo_libros={
+    const prestamo:prestamo={
       id:this.prestamoLibro.get('id')?.value,
       isbn:this.prestamoLibro.get('isbn')?.value,
       fecha_prestamo: new Date(),
       fecha_devolucion:new Date()
       
     }
-    console.log(prestamo_libros);
+    console.log(prestamo);
   }
 
 }
